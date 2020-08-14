@@ -9,7 +9,8 @@
 # RUN apt-get update -y \
 # &&  apt-get install libnss3-tools -y
 
-FROM buildkite/puppeteer:latest 
+FROM zenika/alpine-chrome:83-with-node-12
+# FROM buildkite/puppeteer:latest 
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh

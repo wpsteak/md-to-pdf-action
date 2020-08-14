@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
-find . -name '*.md' > filelist.dat
+cat *.md > all.md
 npm i -g --unsafe-perm md-to-pdf
 
-while read file
-do
-  base_name=$( echo "${file}" | basename "${file}" | sed -e 's/\.md//g')
-  cat "$base_name" >> bigFile.md
-done < bigFile.md
+cat all.md | md-to-pdf --stylesheet s.css > output.pdf
 
-cat file.md | md-to-pdf --stylesheet s.css > output.pdf
-
-rm bigFile.md
+rm all.md

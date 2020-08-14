@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 find . -name '*.md' > filelist.dat
-npm i -g md-to-pdf
+npm i -g --unsafe-perm md-to-pdf
 
 while read file
 do

@@ -8,6 +8,8 @@ npm i -g --unsafe-perm md-to-pdf
 # md-to-pdf
 chmod +x .run.sh
 ./run.sh
+
+ls -alt
 # cat all.md | md-to-pdf --stylesheet s.css > output.pdf
 
 # rm all.md

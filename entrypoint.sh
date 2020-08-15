@@ -5,7 +5,9 @@ ls
 # cat *.md > all.md
 npm i -g --unsafe-perm md-to-pdf
 
-md-to-pdf
+# md-to-pdf
+chmod +x .run.sh
+./run.sh
 # cat all.md | md-to-pdf --stylesheet s.css > output.pdf
 
 # rm all.md

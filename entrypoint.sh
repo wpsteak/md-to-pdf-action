@@ -6,7 +6,7 @@ ls
 npm i -g --unsafe-perm md-to-pdf
 
 # md-to-pdf
-chmod +x .run.sh
+chmod +x run.sh
 ./run.sh
 
 ls -alt
